@@ -10,7 +10,7 @@ use std::str::FromStr;
 /// A MAVLink connection
 pub trait MavConnection {
     /// Receive a mavlink message.
-    ///
+    //
     /// Blocks until a valid frame is received, ignoring invalid messages.
     fn recv(&self) -> io::Result<MavMessage>;
     
